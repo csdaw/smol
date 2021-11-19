@@ -30,7 +30,7 @@ body{
   max-width:800px;
   margin:40px auto;
   padding:0 10px;
-  font:14px/1.5 monospace;
+  font:14px/1.5 'Geneva', sans-serif;
   color:var(--fontcolor); 
   background: var(--bgcolor)
   
@@ -51,8 +51,15 @@ a:active{
   
 }
 
-h1,h2,h3{
-  line-height:1.2
+h1{
+  line-height:1.2;
+  font-family: 'Cambria', serif;
+  font-size: 2em;
+}
+
+h2,h3{
+  line-height:1.2;
+  font-family: 'Cambria', serif;
   
 }
 

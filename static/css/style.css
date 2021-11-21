@@ -30,7 +30,7 @@ body{
   max-width:800px;
   margin:40px auto;
   padding:0 10px;
-  font:14px/1.5 'Geneva', sans-serif;
+  font:15px/1.5 'Trebuchet MS', 'Tahoma', 'Arial', sans-serif;
   color:var(--fontcolor); 
   background: var(--bgcolor)
   
@@ -53,13 +53,13 @@ a:active{
 
 h1{
   line-height:1.2;
-  font-family: 'Cambria', serif;
+  font-family: 'Tahoma', 'Arial', sans-serif;
   font-size: 2em;
 }
 
 h2,h3{
   line-height:1.2;
-  font-family: 'Cambria', serif;
+  font-family: 'Tahoma', 'Arial', sans-serif;
   
 }
 
@@ -93,7 +93,7 @@ article{
 
 figcaption {
   color: #888; 
-  font: 12px/1.5 monospace; 
+  font: 12px/1.5 'Trebuchet MS', 'Arial', sans-serif; 
   text-align: center;
   
 }

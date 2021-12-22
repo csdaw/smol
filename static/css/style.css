@@ -9,3 +9,12 @@ body{
   font:15px/1.5 'Trebuchet MS', 'Tahoma', 'Arial', sans-serif;
   
 }
+
+.content .toggle {
+  display: inline-block;
+  right: 10px;
+  width: 40px;
+  height: 20px;
+  border-radius: 20px;
+  background: red;
+}

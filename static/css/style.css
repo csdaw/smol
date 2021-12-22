@@ -70,9 +70,9 @@ body{
   position: absolute;
   top: 43px;
   right: 15px;
-  padding: 1rem;
-  height: 20px;
-  width: 20px;
+  padding: 0.5rem;
+  height: 10px;
+  width: 10px;
   border-radius: 50%;
   transition: all 0.2s ease-in-out;
   
@@ -91,6 +91,8 @@ body{
   min-height: 100vh;
   background: var(--bgcolor);
   color: var(--fontcolor);
+  transition: background-color 0.2s ease-in-out, 
+              color 0.2s ease-in-out;
   
 }
 
@@ -102,17 +104,20 @@ body{
 }
 
 a:link{
-  color: var(--linkcolor)
+  color: var(--linkcolor);
+  transition: color 0.2s ease-in-out;
   
 }
 
 a:visited{
-  color: var(--visitedcolor)
+  color: var(--visitedcolor);
+  transition: color 0.2s ease-in-out;
   
 }
 
 a:active{
-  color: var(--visitedcolor)
+  color: var(--visitedcolor);
+  transition: color 0.2s ease-in-out;
   
 }
 
@@ -131,7 +136,9 @@ h2,h3{
 p > code{
   color: var(--precolor); 
   background: var(--prebgcolor); 
-  padding:2px
+  padding:2px;
+  transition: background-color 0.2s ease-in-out,
+              color 0.2s ease-in-out;
   
 }
 
@@ -139,7 +146,9 @@ pre{
   color: var(--precolor); 
   background: var(--prebgcolor); 
   padding:24px; 
-  overflow-x: auto
+  overflow-x: auto;
+  transition: background-color 0.2s ease-in-out,
+              color 0.2s ease-in-out;
   
 }
 

@@ -1,21 +1,23 @@
 <header>
-	{{ strings.Repeat ( .Site.Title | len | add 6 ) "=" }}<br>
-	== <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a> ==<br>
-	{{ strings.Repeat ( .Site.Title | len | add 6 ) "=" }}
-	<div style="float: right;">{{ .Site.Params.subtitle }}</div><br>
-	<p>
-	<nav>
+  <div class="navbar">
+    {{ strings.Repeat ( .Site.Title | len | add 6 ) "=" }}<br>
+	  == <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a> ==<br>
+	  {{ strings.Repeat ( .Site.Title | len | add 6 ) "=" }}
+	  <div style="float: right;">{{ .Site.Params.subtitle }}</div><br>
+	  <p>
+	  <nav>
 			<a href="/"><b>Start</b></a>.
 			{{ with .Site.Menus.main }}
 			{{ range . }}
 			<a href="{{ .URL | relURL }}"><b>{{ .Name }}</b></a>.
 			{{ end }}
-	</nav>
-	</p>
-	{{ end }}
-	<label for="">
-	  <span class="toggle">
-	    <span class="circle"></span>
-	  </span>
-	</label>
+	  </nav>
+	  </p>
+	  {{ end }}
+	  <label for="switch">
+	    <span class="toggle">
+	      <span class="circle"></span>
+	    </span>
+	  </label>
+  </div>
 </header>

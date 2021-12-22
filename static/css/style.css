@@ -7,14 +7,78 @@ body{
   height: 100vh;
   margin: 0;
   font:15px/1.5 'Trebuchet MS', 'Tahoma', 'Arial', sans-serif;
+  color: blue;
   
 }
 
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.outer {
+  min-height: 100vh;
+  background: black;
+  
+}
+
+#switch:checked ~ .outer {
+  background: white;
+}
+
+.navbar {
+  background: black;
+  
+}
+
+#switch:checked ~ .outer .navbar {
+  background: white;
+}
+
+.outer .content {
+  max-width: 800px;
+  padding: 40px 15px;
+  margin: 0px auto;
+  background: black;
+}
+
+#switch:checked ~ .outer .content {
+  background: white;
+}
+
 .content .toggle {
-  display: inline-block;
-  right: 10px;
+  display: flex;
+  margin: 5px 10px;
   width: 40px;
   height: 20px;
   border-radius: 20px;
-  background: red;
+  background: white;
+  align-items: center;
+  
+}
+
+#switch:checked ~ .outer .toggle {
+  background: black;
+}
+
+.toggle .circle {
+  height: 16px;
+  width: 16px;
+  margin-left: 3px;
+  border-radius: 50%;
+  background: black;
+  transition: all 0.2s ease;
+  
+}
+
+#switch:checked ~ .outer .circle {
+  margin-left: 21px;
+  background: white;
+}
+
+#switch {
+  display: none;
 }

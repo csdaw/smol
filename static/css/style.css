@@ -99,6 +99,7 @@ nav {
 #switch:checked ~ .outer .content {
   background: var(--bgcolor);
   color: var(--fontcolor);
+  
 }
 
 .content .toggle {
@@ -114,6 +115,7 @@ nav {
 
 #switch:checked ~ .outer .toggle {
   background: var(--fontcolor);
+  
 }
 
 .toggle .circle {
@@ -129,6 +131,7 @@ nav {
 #switch:checked ~ .outer .circle {
   margin-left: 21px;
   background: var(--bgcolor);
+  
 }
 
 #switch {
@@ -177,5 +180,33 @@ p > code {
 
 article {
   padding: 24px 0;
+  
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  
+}
+
+figcaption {
+  color: #888;
+  font: 12px/1.5 'Trebuchet MS', 'Arial', sans-serif;
+  text-align: center;
+  
+}
+
+figure {
+  margin: auto;
+  
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
   
 }

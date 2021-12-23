@@ -184,6 +184,8 @@ pre {
   background: var(--prebgcolor);
   padding: 24px;
   overflow-x: auto;
+  transition: background-color 0.2s ease-in-out,
+              color 0.2s ease-in-out;
   
 }
 

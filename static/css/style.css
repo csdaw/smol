@@ -110,6 +110,7 @@ nav {
   border-radius: 20px;
   background: var(--fontcolor);
   align-items: center;
+  transition: background-color 0.2s ease-in-out;
   
 }
 
@@ -176,6 +177,14 @@ p > code {
   transition: background-color 0.2s ease-in-out,
               color 0.2s ease-in-out;
               
+}
+
+pre {
+  color: var(--precolor);
+  background: var(--prebgcolor);
+  padding: 24px;
+  overflow-x: auto;
+  
 }
 
 article {

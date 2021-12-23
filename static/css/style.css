@@ -1,3 +1,31 @@
+:root {
+  --bgcolor: white;
+  --fontcolor: black;
+  
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bgcolor: black;
+    --fontcolor: white;
+    
+  }
+}
+
+#switch:checked ~ * {
+  --bgcolor: black;
+  --fontcolor: white;
+  
+}
+
+@media (prefers-color-scheme: dark) {
+  #switch:checked ~ * {
+    --bgcolor: white;
+    --fontcolor: black;
+    
+  }
+}
+
 html {
   overflow-y: scroll
   
@@ -7,7 +35,6 @@ body{
   height: 100vh;
   margin: 0;
   font:15px/1.5 'Trebuchet MS', 'Tahoma', 'Arial', sans-serif;
-  color: blue;
   
 }
 
@@ -21,32 +48,37 @@ nav {
 
 .outer {
   min-height: 100vh;
-  background: black;
+  background: var(--bgcolor);
   
 }
 
 #switch:checked ~ .outer {
-  background: white;
+  background: var(--bgcolor);
+  
 }
 
 .navbar {
-  background: black;
+  background: var(--bgcolor);
   
 }
 
 #switch:checked ~ .outer .navbar {
-  background: white;
+  background: var(--bgcolor);
+  
 }
 
 .outer .content {
   max-width: 800px;
   padding: 40px 15px;
   margin: 0px auto;
-  background: black;
+  background: var(--bgcolor);
+  color: var(--fontcolor);
+  
 }
 
 #switch:checked ~ .outer .content {
-  background: white;
+  background: var(--bgcolor);
+  color: var(--fontcolor);
 }
 
 .content .toggle {
@@ -55,13 +87,13 @@ nav {
   width: 40px;
   height: 20px;
   border-radius: 20px;
-  background: white;
+  background: var(--fontcolor);
   align-items: center;
   
 }
 
 #switch:checked ~ .outer .toggle {
-  background: black;
+  background: var(--fontcolor);
 }
 
 .toggle .circle {
@@ -69,14 +101,14 @@ nav {
   width: 16px;
   margin-left: 3px;
   border-radius: 50%;
-  background: black;
+  background: var(--bgcolor);
   transition: all 0.2s ease;
   
 }
 
 #switch:checked ~ .outer .circle {
   margin-left: 21px;
-  background: white;
+  background: var(--bgcolor);
 }
 
 #switch {

@@ -50,8 +50,12 @@ html {
 body{
   height: 100vh;
   margin: 0;
-  font:15px/1.5 'Trebuchet MS', 'Tahoma', 'Arial', sans-serif;
+  font:16px/1.5 'Georgia', 'Arial', sans-serif;
   
+}
+
+.article-title {
+  font-family: 'Tahoma', 'Arial', sans-serif;
 }
 
 nav {
@@ -204,7 +208,7 @@ article {
 
 figcaption {
   color: #888;
-  font: 12px/1.5 'Trebuchet MS', 'Arial', sans-serif;
+  font: 12px/1.5 'Georgia', 'Arial', sans-serif;
   text-align: center;
   
 }

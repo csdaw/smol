@@ -1,43 +1,43 @@
 :root {
-  --bgcolor: white;
-  --fontcolor: black;
-  --linkcolor: #00e;
+  --bgcolor: rgb(250, 250, 250);
+  --fontcolor: hsl(0, 0%, 10%);
+  --linkcolor: rgb(65, 110, 210);
   --visitedcolor: #551a8b;
-  --precolor: #fff;
-  --prebgcolor: #000;
+  --precolor: hsl(0, 0%, 87%);
+  --prebgcolor: rgb(48, 48, 48);
   
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bgcolor: black;
-    --fontcolor: white;
-    --linkcolor: #5bf;
+    --bgcolor: hsl(200, 3%, 12%);
+    --fontcolor: hsl(0, 0%, 87%);
+    --linkcolor: #828fff;
     --visitedcolor: #ae5ee0;
-    --precolor: #fff;
-    --prebgcolor: #383838;
+    --precolor: hsl(0, 0%, 87%);
+    --prebgcolor: rgb(48, 48, 48);
     
   }
 }
 
 #switch:checked ~ * {
-  --bgcolor: black;
-  --fontcolor: white;
-  --linkcolor: #5bf;
-  --visitedcolor: #ae5ee0;
-  --precolor: #fff;
-  --prebgcolor: #383838;
+    --bgcolor: hsl(200, 3%, 12%);
+    --fontcolor: hsl(0, 0%, 87%);
+    --linkcolor: #828fff;
+    --visitedcolor: #ae5ee0;
+    --precolor: hsl(0, 0%, 87%);
+    --prebgcolor: rgb(48, 48, 48);
   
 }
 
 @media (prefers-color-scheme: dark) {
   #switch:checked ~ * {
-    --bgcolor: white;
-    --fontcolor: black;
-    --linkcolor: #00e;
+    --bgcolor: rgb(250, 250, 250);
+    --fontcolor: hsl(0, 0%, 10%);
+    --linkcolor: rgb(65, 110, 210);
     --visitedcolor: #551a8b;
-    --precolor: #fff;
-    --prebgcolor: #000;
+    --precolor: hsl(0, 0%, 87%);
+    --prebgcolor: rgb(48, 48, 48);
     
   }
 }
@@ -149,6 +149,7 @@ a:link {
   
 }
 
+/*
 a:visited {
   color: var(--visitedcolor);
   transition: color 0.2s ease-in-out;
@@ -160,6 +161,7 @@ a:active {
   transition: color 0.2s ease-in-out;
   
 }
+*/
 
 h1 {
   line-height: 1.2;

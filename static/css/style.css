@@ -227,3 +227,10 @@ img {
   margin: auto;
   
 }
+
+.footer-wrapper {
+  font-family: 'Tahoma', 'Arial', sans-serif;
+  font-size: 0.8em;
+  text-align: center;
+  
+}

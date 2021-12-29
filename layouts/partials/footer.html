@@ -1,7 +1,9 @@
 <footer>
-	<p>&copy; {{ now.Year }} {{ .Site.Title }} | {{.Site.Copyright }} | <a href="https://github.com/csdaw/blog">Source</a>
-	{{- range .Site.Menus.footer }}
-	<a href="{{ .URL }}"><b>{{ .Name }}</b></a>.
-        {{- end }}
-	</p>
+  <div class="footer-wrapper">
+    <p>&copy; {{ now.Year }} {{ .Site.Title }} | {{.Site.Copyright }} | <a href="https://github.com/csdaw/blog">Source</a>
+	  {{- range .Site.Menus.footer }}
+	  <a href="{{ .URL }}"><b>{{ .Name }}</b></a>.
+    {{- end }}
+	  </p>
+  </div>
 </footer>

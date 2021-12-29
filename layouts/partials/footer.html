@@ -1,8 +1,7 @@
 <footer>
-	<p>&copy; {{ now.Year }} {{ .Site.Title }} | {{.Site.Copyright }}
+	<p>&copy; {{ now.Year }} {{ .Site.Title }} | {{.Site.Copyright }} | <a href="https://github.com/csdaw/blog">Source</a>
 	{{- range .Site.Menus.footer }}
 	<a href="{{ .URL }}"><b>{{ .Name }}</b></a>.
         {{- end }}
 	</p>
-	<p>Built with blogdown and Hugo using theme smol</p>
 </footer>
